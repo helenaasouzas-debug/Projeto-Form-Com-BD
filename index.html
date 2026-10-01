@@ -1,0 +1,128 @@
+<!-- Informa que o documento utiliza HTML5. -->
+<!DOCTYPE html>
+
+<!-- Início do documento HTML. -->
+<html>
+
+    <!-- Início do cabeçalho da página. -->
+    <head>
+
+        <!-- Define o título exibido na aba do navegador. -->
+        <title>Formulário</title>
+
+        <!-- Importa a biblioteca Bootstrap para estilizar a página. -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+        <!-- Define a codificação de caracteres da página. -->
+        <meta charset="UTF-8">
+
+        <!-- Ajusta a página para diferentes tamanhos de tela. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Fecha o cabeçalho da página. -->
+    </head>
+
+    <!-- Início do corpo da página. -->
+    <body>
+
+        <!-- Cria uma seção centralizada com margem superior. -->
+        <section class="container mt-4">
+
+            <!-- Exibe o título principal da página. -->
+            <h1 class="text-center">Formulário</h1>
+
+            <!-- Inicia o formulário que envia os dados para form.jsp. -->
+            <form method="post" action="form.jsp">
+
+                <!-- Cria um grupo para o campo usuário. -->
+                <div class="form-group">
+
+                    <!-- Exibe o texto do campo usuário. -->
+                    <label>Usuário:</label>
+
+                    <!-- Campo de texto para informar o usuário. -->
+                    <input type="text" name="nome" class="form-control" required>
+
+                    <!-- Fecha o grupo do campo usuário. -->
+                </div>
+
+                <!-- Cria um grupo para o campo senha. -->
+                <div class="form-group">
+
+                    <!-- Exibe o texto do campo senha. -->
+                    <label>Senha:</label>
+
+                    <!-- Campo para digitar a senha de forma oculta. -->
+                    <input type="password" name="senha" class="form-control" required>
+
+                    <!-- Fecha o grupo do campo senha. -->
+                </div>
+
+                <!-- Cria um grupo para o campo nome completo. -->
+                <div class="form-group">
+
+                    <!-- Exibe o texto do campo nome completo. -->
+                    <label>Nome Completo:</label>
+
+                    <!-- Campo de texto para informar o nome completo. -->
+                    <input type="text" name="nomeCompleto" class="form-control" required>
+
+                    <!-- Fecha o grupo do campo nome completo. -->
+                </div>
+
+                <!-- Cria um grupo para o campo idade. -->
+                <div class="form-group">
+
+                    <!-- Exibe o texto do campo idade. -->
+                    <label>Idade:</label>
+
+                    <!-- Campo numérico para informar a idade. -->
+                    <input type="number" name="idade" class="form-control" required>
+
+                    <!-- Fecha o grupo do campo idade. -->
+                </div>
+
+                <!-- Cria um grupo para o campo curso. -->
+                <div class="form-group">
+
+                    <!-- Exibe o texto do campo curso. -->
+                    <label>Curso:</label>
+
+                    <!-- Cria uma lista de opções para selecionar o curso. -->
+                    <select name="curso" class="form-control" required>
+
+                        <!-- Opção padrão da lista. -->
+                        <option value="">Selecione...</option>
+
+                        <!-- Opção do curso Informática. -->
+                        <option>Informática</option>
+
+                        <!-- Opção do curso Administração. -->
+                        <option>Administração</option>
+
+                        <!-- Opção do curso Design. -->
+                        <option>Design</option>
+
+                        <!-- Opção do curso Desenvolvimento de Sistemas. -->
+                        <option>Desenvolvimento de Sistemas</option>
+
+                        <!-- Fecha a lista de cursos. -->
+                    </select>
+
+                    <!-- Fecha o grupo do campo curso. -->
+                </div>
+
+                <!-- Cria o botão para enviar o formulário. -->
+                <input type="submit" value="Enviar" class="btn btn-primary">
+
+                <!-- Fecha o formulário. -->
+            </form>
+
+            <!-- Fecha a seção principal. -->
+        </section>
+
+        <!-- Fecha o corpo da página. -->
+    </body>
+
+    <!-- Fecha o documento HTML. -->
+</html>
